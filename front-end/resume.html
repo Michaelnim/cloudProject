@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Responsive Resume</title>
+</head>
+
+<body>
+
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Michael</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-heart nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user-circle nav__icon'></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book-heart nav__icon'></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Projects
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon'></i>References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <main class="l-main bd-container">
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="img/me.jpg" alt="" class="home__img">
+                            <h1 class="home__title">MICHAEL<b> VO</b></h1>
+                            <h3 class="home__profession">Computer Science</h3>
+                            <p>visitor counter! <a id"counter"></a> </p>
+                            <div>
+                                <a download="" href="pdf/Resume.pdf" class="home__button-movil">Resume</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> San Jose, California 95116
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> vo.mikey@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> (408) 348-1441
+                            </span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+
+                </section>
+
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/michael-vo-180b42238/" target="_blank"
+                            class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i> LinkedIn
+                        </a>
+                        <a href="https://www.facebook.com/vo.mike" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook-square social__icon'></i> Facebook
+                        </a>
+                        <a href="https://github.com/Michaelnim" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i> Github
+                        </a>
+
+                    </div>
+                </section>
+
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile_description">Computer Science graduate with a passion for technology with a firm
+                        foundation in programming,
+                        data structures, and algorithms. Pursing an entry-level position in Computer Science that will
+                        allow me to
+                        contribute my technical skills and knowledge. My focus is to offer my skills to a passionate
+                        team and grow
+                        professionally while having a helpful impact.
+                    </p>
+                </section>
+
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education__content bd-grid">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Computer Science</h3>
+                            <span class="education__studies">California State University, East Bay </span>
+                            <span class="education__year">2020 - 2022</span>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills_name">
+                                <span class="skills__circle"></span> Python
+                            </li>
+                            <li class="skills_name">
+                                <span class="skills__circle"></span> Html
+                            </li>
+                            <li class="skills_name">
+                                <span class="skills__circle"></span> Css
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills_name">
+                                <span class="skills__circle"></span> Azure
+                            </li>
+                            <li class="skills_name">
+                                <span class="skills__circle"></span> Bash
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Vietnamese
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+
+            <div class="resume__right">
+                <section class="project section" id="project">
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="project__container bd-grid">
+                        <div class="project__content">
+                            <div class="project__time">
+                                <span class="project__rounder"></span>
+                                <span class="project__line"></span>
+                            </div>
+
+                            <div class="project__data bd-grid">
+                                <h3 class="project__title"> Microsoft Azure</h3>
+                                <span class="project__current">Current Project | Azure Cloud</span>
+                                <p class="project__description">
+                                    I crafted a web-based<a href="https://responsiveresume.z5.web.core.windows.net"><em><b> resume</b></em></a>, using my knowledge of
+                                    HTML, CSS, and a touch of JavaScript. To make it accessible, I opted to deploy it on
+                                    Azure, complemented by a DNS and CDN for optimal front-end performance. For the
+                                    backend, I established a source control system and integrated a visitor counter that
+                                    stores data in a database, subsequently displaying it on the homepage. To streamline
+                                    the entire infrastructure, I employed Azure Resource Manager (ARM) for automation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project__container bd-grid">
+                            <div class="project__content">
+                                <div class="project__time">
+                                    <span class="project__rounder"></span>
+                                    <span class="project__line"></span>
+                                </div>
+
+                                <div class="project__data bd-grid">
+                                    <h3 class="project__title"> Android App</h3>
+                                    <span class="project__current"> 2022 | Android Studio</span>
+                                    <p class="project__description">
+                                        For this project, my aim was to develop a straightforward Android app to assist
+                                        with my studies. The app, designed like flashcards, features a simple and linear
+                                        layout, eschewing unnecessary flashiness. Leveraging an ArrayList, I generated
+                                        multiple questions, each with a true or false answer. To present these
+                                        questions, I utilized Android's built-in classes to create buttons. To provide
+                                        feedback to the user, I incorporated a toast message that appears at the bottom,
+                                        indicating whether their response is correct or incorrect.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project__container bd-grid">
+                                <div class="project__content">
+                                    <div class="project__time">
+                                        <span class="project__rounder"></span>
+                                    </div>
+
+                                    <div class="project__data bd-grid">
+                                        <h3 class="project__title"> Honeypot</h3>
+                                        <span class="project__current">2021 | Ubuntu/Kali</span>
+                                        <p class="project__description">
+                                            I began by setting up a honeypot on an Ubuntu VM, installing a software
+                                            called Cowrie. To test its efficacy, I utilized another VM running Kali to
+                                            conduct a scan for open ports using zenmap. Upon discovering an open port, I
+                                            opted to employ hydra, a tool equipped with a list of common passwords, and
+                                            executed the software. Despite observing numerous login attempts in the logs
+                                            on the Ubuntu machine, none were denied. In response, I turned to another
+                                            tool called fail2ban to prevent potential brute force attacks and configured
+                                            it to notify me via email if more than three attempts failed. The primary
+                                            goal of this project was to create an enticing environment for users to
+                                            connect into.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                </section>
+
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <a href="https://learn.microsoft.com/en-us/users/michaelvo-1327/credentials/9227492932eb1a1c"
+                            target="_blank" class="certificate__title social__link">
+                            <h3>Azure Cloud</h3>
+                        </a>
+                        <p class="certificate__description"> Covers foundational concepts of cloud services,
+                            including understanding Azure pricing, services, security, compliance, and basic cloud
+                            terminology.</p>
+                    </div>
+                    <div class="certificate__content">
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XKFX5TEMYPFN"
+                            target="_blank" class="certificate__title social__link">
+                            <h4>Google IT Automation</h4>
+                        </a>
+                        <p class="certificate__description"> IT automation using Python, it covers topics such as
+                            programming fundamentals, troubleshooting, and automation principles.</p>
+                    </div>
+                    <section class="interests section">
+                        <h2 class="section-title">interests</h2>
+
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content intrests__icon">
+                                <i class='bx bxs-cloud'></i>
+                                <span class="interests__name">Cloud Computing</span>
+                            </div>
+                            <div class="interests__content intrests__icon">
+                                <i class='bx bxs-bug'></i>
+                                <span class="interests__name">Debugging</span>
+                            </div>
+                            <div class="interests__content intrests__icon">
+                                <i class='bx bxs-game'></i>
+                                <span class="interests__name">Gaming</span>
+                            </div>
+                        </div>
+                    </section>
+                            <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+        
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Upon Request</span>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+            </section>
+
+
+        </div>
+        </div>
+    </main>
+
+    <script src="js/raw.githubusercontent.com_eKoopmans_html2pdf.js_master_dist_html2pdf.bundle.min.js"></script>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevrons-up scrolltop__icon'></i>
+    </a>
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
