@@ -40,18 +40,18 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-function scrollTop(){
+function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
-function scaleCv(){
+function scaleCv() {
     document.body.classList.add('scale-cv')
 }
 
-function removeScale(){
+function removeScale() {
     document.body.classList.remove('scale-cv')
 
 }
@@ -61,21 +61,43 @@ let areaCv = document.getElementById('area-cv')
 let resumeButton = document.getElementById('resume-button')
 
 let opt = {
-    margin:       0,
-    filename:     'myResume.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 4 },
-    jsPDF:        {format: 'a4', orientation: 'portrait' }
-  };
+    margin: 0,
+    filename: 'myResume.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 4 },
+    jsPDF: { format: 'a4', orientation: 'portrait' }
+};
 
-function generateResume(){
+function generateResume() {
     html2pdf(areaCv, opt)
 }
 
-resumeButton.addEventListener('click', () =>{
+resumeButton.addEventListener('click', () => {
     scaleCv()
 
     generateResume()
 
 })
 
+
+/* VISITOR COUNTER */
+
+window.addEventListener('DOMContentLoaded', (event) =>{
+    getVisitCount();
+})
+
+const functionApi = '';
+
+const getVisitCount = () => {
+    let count = 30;
+    fetch(functionApi).then(response => {
+        return response.json()
+    }).then(response => {
+        console.log("Website calling function API.");
+        count = response.count;
+        document.getElementById("counter").innerText = count;
+    }).catch(function (error) {
+        console.log(error)
+    });
+    return count;
+}
