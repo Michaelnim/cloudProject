@@ -82,7 +82,7 @@ resumeButton.addEventListener('click', () => {
 
 /* VISITOR COUNTER */
 
-window.addEventListener('DOMContentLoaded', (event) =>{
+window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 })
 
