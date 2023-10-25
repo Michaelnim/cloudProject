@@ -79,25 +79,38 @@ resumeButton.addEventListener('click', () => {
 
 })
 
-
 /* VISITOR COUNTER */
+
+const functionApi = 'local_host_url';
+
+const updateCounter = (count) => {
+    document.getElementById("counter").innerText = count;
+};
+
+const getVisitCount = () => {
+    let count; // Define the count variable
+
+    fetch(functionApi)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(response => {
+            console.log("Website calling function API.");
+            count = response.count;
+            updateCounter(count);
+        })
+        .catch(error => {
+            console.log(error);
+            // Handle the error, e.g., display an error message on the page
+        });
+};
 
 window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
-})
+});
 
-const functionApi = '';
 
-const getVisitCount = () => {
-    let count = 30;
-    fetch(functionApi).then(response => {
-        return response.json()
-    }).then(response => {
-        console.log("Website calling function API.");
-        count = response.count;
-        document.getElementById("counter").innerText = count;
-    }).catch(function (error) {
-        console.log(error)
-    });
-    return count;
-}
+

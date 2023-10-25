@@ -1,3 +1,5 @@
+import json
+import logging
 import azure.functions as func
 from azure.cosmos import CosmosClient
 
@@ -15,7 +17,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     container = database.get_container_client(container_name)
 
     # Query Cosmos DB to get the current count
-    query = f"SELECT * FROM c WHERE c.id = 'current_count'"
+    query = f"SELECT * FROM c WHERE c.id = '1'"
     items = list(container.query_items(query, enable_cross_partition_query=True))
 
     if items:
@@ -29,4 +31,13 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         count_item = {'id': 'current_count', 'count': 1}
         container.create_item(body=count_item)
 
-    return func.HttpResponse(f"Visitor count: {count_item['count']}", status_code=200)
+    response_data = {
+        "message": "Visitor count updated.",
+        "status_code": 200,
+        "count": count_item['count']  # Corrected to use 'count_item'
+    }
+
+    response_json = json.dumps(response_data)
+    logging.info(f'Response JSON: {response_json}')  # Log the response data
+
+    return func.HttpResponse(response_json, mimetype="application/json", status_code=200)

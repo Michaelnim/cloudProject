@@ -7,7 +7,7 @@
     --text-color-light: #707070;
     --container-color: #FAFAFA;
     --container-color-alt: #F0EFEF;
-    --body-color: #6C7F93;
+    --body-color: #6c7f93;
 
     --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
@@ -398,6 +398,11 @@ padding-right: .5rem;
     }
 }
 
+#counter{
+    color: black;
+    font-weight: bold;
+}
+
 .nav {
     height: var(--header-height);
     display: flex;
@@ -471,7 +476,7 @@ padding-right: .5rem;
 .home__img {
     width: 100px;
     height: 100px;
-    margin-left: 50px;
+    margin-left: 70px;
     border-radius: 50%;
     margin-bottom: var(--mb-1);
 }
