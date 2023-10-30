@@ -80,8 +80,8 @@ resumeButton.addEventListener('click', () => {
 })
 
 /* VISITOR COUNTER */
-
-const functionApi = 'local_host_url';
+const functionApiUrl = "https://pycounter.azurewebsites.net/api/function?";
+const functionApi = 'http://localhost:7071/api/function';
 
 const updateCounter = (count) => {
     document.getElementById("counter").innerText = count;
@@ -90,7 +90,7 @@ const updateCounter = (count) => {
 const getVisitCount = () => {
     let count; // Define the count variable
 
-    fetch(functionApi)
+    fetch(functionApiUrl)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

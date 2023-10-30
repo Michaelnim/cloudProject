@@ -6,10 +6,9 @@ from azure.cosmos import CosmosClient
 def main(req: func.HttpRequest) -> func.HttpResponse:
     # Azure Cosmos DB connection settings
     cosmos_url = "cosmos_db_url"
-    cosmos_key = "cosmos_db_key"
+    cosmos_key = "cosmos_key"
     database_name = "VisitorCounter"
     container_name = "count"
-    partition_key = "/id"
 
     # Create Cosmos DB client
     client = CosmosClient(cosmos_url, cosmos_key)
