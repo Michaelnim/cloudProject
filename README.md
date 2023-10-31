@@ -67,3 +67,5 @@ Login to your Azure account through VSCode, navigate to the workshop tab, and se
 
 [![Code-LBv-Wn-Sj3hx.png](https://i.postimg.cc/sDC8Tpm3/Code-LBv-Wn-Sj3hx.png)](https://postimg.cc/c6TXHtPz)
 
+Using the code from my back-end folder __init__.py modify "cosmos_db_url" and "cosmos_key" with your respective Cosmos DB URL and key. Similarly, in the front-end folder, locate #VISITOR COUNTER in the main.js file (it's at the bottom) and update "function_api_url" to match yours. If implemented accurately, the code should display the count. To test, return to the back-end folder using the CLI and execute func start.
+
