@@ -33,7 +33,26 @@ Now, proceed to create a blob storage. Ensure that the subscription and group na
 [![chrome-OUAi-Ylb-Yak.png](https://i.postimg.cc/V6Y6mQsN/chrome-OUAi-Ylb-Yak.png)](https://postimg.cc/sBNy4LhF)
 
 Head to your blob storage and upload your resume into the designated container named $web. Once the upload is complete, navigate to the "Capabilities" tab beneath the upload button. Locate the "Static Website" option and enable it. 
-If executed correctly, the provided link should showcase your resume. To create a CDN (Content Delivery Network) go back to the "Capabilties" tab and locate Front Door and CDN profiles.
+If executed correctly, the provided link should showcase your resume.
+
+[![chrome-siy4-DKFq-JR.png](https://i.postimg.cc/63ZRSNQ1/chrome-siy4-DKFq-JR.png)](https://postimg.cc/N9g59Sm1)
+
+
+
+To create a CDN (Content Delivery Network) go back to the "Capabilties" tab and locate Front Door and CDN profiles. Add an endpoint to that profile the Origin type - Storage Static website, Origin hostname - should point to your resume.
+
+Adding a custom domain to your CDN you'll need to configure DNS settings from your web hosting service example: Squarespace, Wix, wordpress, and etc. It should look something like this. After that is completed only then will you be able to 
+add your custom hostname be sure to enable https after its sucessfully connected.
+
+[![chrome-z-Ud-Uj-Zkzfc.png](https://i.postimg.cc/QN2BPPLR/chrome-z-Ud-Uj-Zkzfc.png)](https://postimg.cc/qgGM61vL)
+
+
+### Links
+[Host a static website in Azure Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal)
+
+[Create an Azure CDN profile and endpoint](https://learn.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint)
+
+[Configure HTTPS on An Azure CDN custom domain](https://learn.microsoft.com/en-us/azure/cdn/cdn-custom-ssl?tabs=option-1-default-enable-https-with-a-cdn-managed-certificate)
 
 
 
