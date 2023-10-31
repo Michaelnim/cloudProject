@@ -6,6 +6,7 @@ Initially, my understanding of the cloud was minimal at best. I initially experi
 
 Fast forward to today, and I've earned my first certification AZ-900 Azure Fundamentals and my learning journey continues. 
 It took me approximately 40 to 50 hours to bring this project to fruition, but don't let the time investment deter you. I've documented my progress on GitHub, hoping that it can serve as a valuable resource for others facing similar challenges as I did.
+
 **Reserve the use of this readme for those moments when you find yourself truly stuck. Embracing trial and error not only fosters a deeper understanding but also enhances your ability to retain information.**
 
 ## Prerequisites
@@ -22,6 +23,6 @@ It took me approximately 40 to 50 hours to bring this project to fruition, but d
 
 Begin crafting your resume in HTML. For inspiration, [check out this example](https://codepen.io/emzarts/pen/OXzmym). Feel free to tailor your resume to be as straightforward or as intricate as you desire.
 Go into your Azure account create a subscription then a resource group. 
-
+[![chrome-Y6-Qjhl-Xv4-E.png](https://i.postimg.cc/265ZTDfW/chrome-Y6-Qjhl-Xv4-E.png)](https://postimg.cc/1gLX5bXR)
 
   
