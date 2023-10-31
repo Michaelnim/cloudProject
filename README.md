@@ -16,10 +16,17 @@ It took me approximately 40 to 50 hours to bring this project to fruition, but d
 - Github Account
 - Azure Acccount
 - Visual Studio Code
-    - Extensions: Azure Account, Azure Tools
+    - Extensions: Azure Account, Azure Tools, Python
 
 
 ## Chunk 1: Building The front end
+### Links
+[Host a static website in Azure Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal)
+
+[Create an Azure CDN profile and endpoint](https://learn.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint)
+
+[Configure HTTPS on An Azure CDN custom domain](https://learn.microsoft.com/en-us/azure/cdn/cdn-custom-ssl?tabs=option-1-default-enable-https-with-a-cdn-managed-certificate)
+
 
 Begin crafting your resume in HTML. For inspiration, [check out this example](https://codepen.io/emzarts/pen/OXzmym). Feel free to tailor your resume to be as straightforward or as intricate as you desire.
 
@@ -47,15 +54,15 @@ add your custom hostname be sure to enable https after its sucessfully connected
 [![chrome-z-Ud-Uj-Zkzfc.png](https://i.postimg.cc/QN2BPPLR/chrome-z-Ud-Uj-Zkzfc.png)](https://postimg.cc/qgGM61vL)
 
 
-### Links
-[Host a static website in Azure Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal)
+## Chunk 2: Building The back end
 
-[Create an Azure CDN profile and endpoint](https://learn.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint)
+Create a new resource group. Within this group, create a CosmosDB NoSQL database. Generate a new container with the same name as the screenshot. Inside this container, include a file named "items." Modify the "id" to "id": 0, and add "count": 0
 
-[Configure HTTPS on An Azure CDN custom domain](https://learn.microsoft.com/en-us/azure/cdn/cdn-custom-ssl?tabs=option-1-default-enable-https-with-a-cdn-managed-certificate)
+[![chrome-Vp2mv7-Tgx-Q.png](https://i.postimg.cc/hGX7zQHd/chrome-Vp2mv7-Tgx-Q.png)](https://postimg.cc/jWrjB2qx)
 
+Now, in the same group, set up a Python function. Proceed to the coding phase using VSCode, ensuring you have two folders: one for the front-end (resume) and the other for the back-end (python trigger/db).
 
+Login to your Azure account through VSCode, navigate to the workshop tab, and select Azure Function. Create a new project in the back-end folder, choosing Python as the language, Model V1, and any Python version. Opt for an HTTP trigger with a name of your choice and set Authorization level to Anonymous. Test if the function is operational by going to the back-end folder and using the command func start.
 
+[![Code-LBv-Wn-Sj3hx.png](https://i.postimg.cc/sDC8Tpm3/Code-LBv-Wn-Sj3hx.png)](https://postimg.cc/c6TXHtPz)
 
-
-  
