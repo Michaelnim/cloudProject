@@ -37,6 +37,7 @@ Navigate to your Azure account, create a new subscription, and within that subsc
 
 
 Now, proceed to create a blob storage. Ensure that the subscription and group name match the ones you previously created.
+
 [![chrome-OUAi-Ylb-Yak.png](https://i.postimg.cc/V6Y6mQsN/chrome-OUAi-Ylb-Yak.png)](https://postimg.cc/sBNy4LhF)
 
 Head to your blob storage and upload your resume into the designated container named $web. Once the upload is complete, navigate to the "Capabilities" tab beneath the upload button. Locate the "Static Website" option and enable it. 
