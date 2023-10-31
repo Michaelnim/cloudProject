@@ -56,6 +56,9 @@ add your custom hostname be sure to enable https after its sucessfully connected
 
 
 ## Chunk 2: Building The back end
+### Links
+[Creating Azure Funtion](https://www.grinntec.net/docs/cloudresumechallenge/chunk2-backend/10-create-api-function/10-create-api-function-azure/)
+[CORS](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#cors)
 
 Create a new resource group. Within this group, create a CosmosDB NoSQL database. Generate a new container with the same name as the screenshot. Inside this container, include a file named "items." Modify the "id" to "id": 0, and add "count": 0
 
