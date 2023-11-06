@@ -76,7 +76,7 @@ Login to your Azure account through VSCode, navigate to the workshop tab, and se
 
 Using the code from my back-end folder __init__.py modify "cosmos_db_url" and "cosmos_key" with your respective Cosmos DB URL and key. Similarly, in the front-end folder, locate #VISITOR COUNTER in the main.js file (it's at the bottom) and update "function_api_url" to match yours. If implemented accurately, the code should display the count. To test, return to the back-end folder using the CLI and execute func start.
 
-## If you're have trouble deploying the function use this method instead of the link provided above.
+## If you're having trouble deploying the function use this method instead of the link provided above.
 
 To get that Python code uploaded, head back into Azure. Create a Python Function App and navigate to "configuration." Now, add a new application setting named "AzureResumeConnectionString." Set the value to your CosmosDB primary connection string and hit save.
 
