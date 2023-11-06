@@ -59,7 +59,10 @@ add your custom hostname be sure to enable https after its sucessfully connected
 ### Links
 [Creating Azure Funtion](https://www.grinntec.net/docs/cloudresumechallenge/chunk2-backend/10-create-api-function/10-create-api-function-azure/)
 
+[Deploy Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v3%2Cpython-v1%2Cisolated-process&pivots=programming-language-python)
+
 [CORS](https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#cors)
+
 
 Create a new resource group. Within this group, create a CosmosDB NoSQL database. Generate a new container with the same name as the screenshot. Inside this container, include a file named "items." Modify the "id" to "id": 0, and add "count": 0
 
@@ -72,6 +75,8 @@ Login to your Azure account through VSCode, navigate to the workshop tab, and se
 [![Code-LBv-Wn-Sj3hx.png](https://i.postimg.cc/sDC8Tpm3/Code-LBv-Wn-Sj3hx.png)](https://postimg.cc/c6TXHtPz)
 
 Using the code from my back-end folder __init__.py modify "cosmos_db_url" and "cosmos_key" with your respective Cosmos DB URL and key. Similarly, in the front-end folder, locate #VISITOR COUNTER in the main.js file (it's at the bottom) and update "function_api_url" to match yours. If implemented accurately, the code should display the count. To test, return to the back-end folder using the CLI and execute func start.
+
+##If you have trouble deploying the function use this method instead of the link.
 
 To get that Python code uploaded, head back into Azure. Create a Python Function App and navigate to "configuration." Now, add a new application setting named "AzureResumeConnectionString." Set the value to your CosmosDB primary connection string and hit save.
 
